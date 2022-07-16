@@ -59,13 +59,14 @@ const shuffleString = (str, indicesArr) => {
     shuffledString[indicesArr[i]] = str[i];
     console.log(shuffledString);
 
+    // there a soulution that can do it and it is charAt
+
     // indi[4, 5, 6, 7, 0, 2, 1, 3];
     // shuff[null, null, null, null, null, null, null, null];
     // i = 0 indecise of [i] = 4;
     // shuffeld[inde[i]] =
-    //
+
     // s = "codeleet"
-    //
   }
   // shuffledString = shuffledString.join("");
   return shuffledString.join("");
