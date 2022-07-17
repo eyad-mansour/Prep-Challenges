@@ -61,6 +61,14 @@
 
 // obj.forEach((o) => console.log(o));
 
+// ---------------------------
+// for (let i = 0; i < numsArr.length; i++) {
+//   const num = numsArr[i];
+//   const currentIdx = indexArr[i];
+//   targetArr.splice(currentIdx, 0, num);
+// }
+// ---------------------------
+
 const cvFormatter = (arr) => {
   // write your code here
   const arrformated = [];
@@ -131,18 +139,12 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
   let targetArr = [];
   // write your code here
 
-  // for (let i = 0; i < numsArr.length; i++) {
-  //   const num = numsArr[i];
-  //   const currentIdx = indexArr[i];
-  //   targetArr.splice(currentIdx, 0, num);
-  // }
+  for (let i = 0; i < numsArr.length; i++) {
+    let index = indexArr[i];
+    let element = numsArr[i];
 
-  // for (let i = 0; i <= numsArr.length; i++) {
-  //   let index = indexArr[i];
-  //   let element = numsArr[i];
-
-  //   targetArr.splice(index, 0, element);
-  // }
+    targetArr.splice(index, 0, element);
+  }
 
   return targetArr;
 };
